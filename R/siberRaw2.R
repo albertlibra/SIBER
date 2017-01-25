@@ -536,7 +536,7 @@ fitNL_trunc <- function(y, model='E'){
 extractMclustPar <- function(mc, modelName='E', logLikToLN=FALSE, dat=NA){
 res <- rep(NA, 7)
 nPar <- ifelse(modelName=='V', 5, 4) # number of parameters
-if(class(mc)!="try-error"){
+if(class(mc)!="try-error"&length(mc$parameters$mean)!=0){
 	# extract mu1, mu2
 	res[1:2] <- mc$parameters$mean
 	# extract sigma1, sigma2
