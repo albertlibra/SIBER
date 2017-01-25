@@ -727,7 +727,7 @@ SIBER <- function(y, d=NULL, model=c('LN', 'NB', 'GP', 'Beta', 'NL', 'BetaReg'),
         fit <- transformAlphaBetaToMuSigma(fitAlphaBetaScale)
     } else {
 		#browser()
-		fit <- fitNL(y, d=d, model='E')[1:5]
+		fit <- fitNL(y, d=d, model='V')[1:5]
 	}
 	BIinfo <- parToBI(fit, phi2Var=FALSE)
 	res[1:5] <- fit
