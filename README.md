@@ -10,8 +10,8 @@ The [**devtools** package](http://cran.r-project.org/web/packages/devtools/index
 
 ```r
     library(devtools)
-    install_github("albert/SIBER")
+    install_github("albertlibra/SIBER")
 ```
 ## Note
 
-Revised by albertlibra
+Revised by albertlibra for research purpose
